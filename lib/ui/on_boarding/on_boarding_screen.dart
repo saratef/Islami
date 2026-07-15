@@ -22,7 +22,7 @@ class OnBoardingPageState extends State<OnBoardingPage> {
   void _onIntroEnd(BuildContext context) {
     Navigator.of(
       context,
-    ).pushReplacement(MaterialPageRoute(builder: (_) => const HomeScreen()));
+    ).pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
   }
 
   @override

@@ -19,4 +19,9 @@ class AppStyles {
     fontSize: 16,
     fontWeight: FontWeight.bold,
   );
+  static final TextStyle bottomNavBarStyle = GoogleFonts.inter(
+    color: AppColors.whiteColor,
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+  );
 }

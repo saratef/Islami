@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islami_app/ui/home/home_screen.dart';
+import 'package:islami_app/ui/on_boarding/on_boarding_screen.dart';
 import 'package:islami_app/utils/app_routes.dart';
 
 void main() {
@@ -14,8 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.homeRouteName,
-      routes: {AppRoutes.homeRouteName: (context) => HomeScreen()},
+      initialRoute: AppRoutes.onBoardingRouteName,
+      routes: {
+        AppRoutes.homeRouteName: (context) => HomeScreen(),
+        AppRoutes.onBoardingRouteName: (context) => OnBoardingPage(),
+      },
     );
   }
 }

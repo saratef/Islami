@@ -7,7 +7,7 @@ class AppImages {
   static const String onBoardingImage5 = "${_base}on_boarding5.png";
   static const String globalHeader = "${_base}globalHeader.png";
   static const String suraBg = "${_base}surah_bg.png";
-  static const String hadethBg = "${_base}hadeth_bg.png";
+  static const String hadethTabBg = "${_base}hadeth_tab_bg.png";
   static const String timeBg = "${_base}time_bg.png";
   static const String radioBg = "${_base}radio_bg.png";
   static const String sebhaBg = "${_base}sebha_bg.png";
@@ -17,6 +17,8 @@ class AppImages {
   static const String leftCorner = 'assets/images/left_corner.png';
   static const String rightCorner = 'assets/images/right_corner.png';
   static const String globalFooter = 'assets/images/global_footer.png';
+  static const String hadethBg = 'assets/images/hadeth_item_bg.png';
+  static const String hadethfooter = 'assets/images/hadeth_footer.png';
 }
 
 class AppIcons {

@@ -22,7 +22,7 @@ class OnBoardingPageState extends State<OnBoardingPage> {
   void _onIntroEnd(BuildContext context) {
     Navigator.of(
       context,
-    ).pushReplacement(MaterialPageRoute(builder: (_) => const HomeScreen()));
+    ).pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
   }
 
   @override
@@ -31,8 +31,8 @@ class OnBoardingPageState extends State<OnBoardingPage> {
 
     PageDecoration pageDecoration = PageDecoration(
       imageFlex: 3,
-      titleTextStyle: AppStyles.onBoardingTitleStyle,
-      bodyTextStyle: AppStyles.onBoardingBodyStyle,
+      titleTextStyle: AppStyles.bold24primary,
+      bodyTextStyle: AppStyles.bold16primary,
       bodyPadding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
 
       pageColor: AppColors.blackColor,
@@ -94,14 +94,14 @@ class OnBoardingPageState extends State<OnBoardingPage> {
       //rtl: true, // Display as right-to-left
       back: Text(
         AppStrings.backButton,
-        style: AppStyles.onBoardingControllersStyle,
+        style: AppStyles.bold16primary,
       ),
-      skip: Text('Skip', style: AppStyles.onBoardingControllersStyle),
+      skip: Text('Skip', style: AppStyles.bold16primary),
       next: Text(
         AppStrings.nextButton,
-        style: AppStyles.onBoardingControllersStyle,
+        style: AppStyles.bold16primary,
       ),
-      done: Text('Done', style: AppStyles.onBoardingControllersStyle),
+      done: Text('Done', style: AppStyles.bold16primary),
 
       curve: Curves.fastLinearToSlowEaseIn,
       controlsPadding: kIsWeb

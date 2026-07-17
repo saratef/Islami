@@ -11,6 +11,12 @@ class AppImages {
   static const String timeBg = "${_base}time_bg.png";
   static const String radioBg = "${_base}radio_bg.png";
   static const String sebhaBg = "${_base}sebha_bg.png";
+  static const String mostRecent = "${_base}most_recent_image.png";
+  static const String suraNumber = "${_base}sura_number.png";
+  static const String suraDetailsBg = "assets/images/sura_bg.png";
+  static const String leftCorner = 'assets/images/left_corner.png';
+  static const String rightCorner = 'assets/images/right_corner.png';
+  static const String globalFooter = 'assets/images/global_footer.png';
 }
 
 class AppIcons {

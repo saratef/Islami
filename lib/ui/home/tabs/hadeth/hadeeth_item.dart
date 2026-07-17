@@ -93,7 +93,6 @@ class _HadeethItemState extends State<HadeethItem> {
     String title = hadeethContent.substring(0, hadeethContent.indexOf('\n'));
     String content = hadeethContent.substring(hadeethContent.indexOf('\n') + 1);
     hadeth = Hadeth(title: title, content: content);
-    print(title);
     setState(() {});
     // List<String> lines = hadeethContent.split('\n');
     // String title = lines[0];

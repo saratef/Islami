@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/model/quran_resources.dart';
-import 'package:islami_app/utils/app_routes.dart';
 import 'package:islami_app/utils/app_styles.dart';
 
 class SurasListItem extends StatelessWidget {
@@ -13,11 +12,6 @@ class SurasListItem extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     return InkWell(
-      onTap: () {
-        Navigator.of(
-          context,
-        ).pushNamed(AppRoutes.suraDetails1RouteName, arguments: index);
-      },
       child: Row(
         spacing: width * .04,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,7 +39,7 @@ class SurasListItem extends StatelessWidget {
           ),
           Spacer(),
           Text(
-            QuranResourses.arabicAuranSuras[index],
+            QuranResourses.arabicQuranSuras[index],
             style: AppStyles.bold20white,
           ),
         ],

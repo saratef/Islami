@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
               selectedItemColor: AppColors.whiteColor,
               unselectedItemColor: AppColors.blackColor,
               currentIndex: selectedIndex,
-              selectedLabelStyle: AppStyles.bottomNavBarStyle,
+              selectedLabelStyle: AppStyles.bold12white,
               onTap: (index) {
                 selectedIndex = index;
                 setState(() {});

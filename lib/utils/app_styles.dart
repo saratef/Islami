@@ -46,15 +46,4 @@ class AppStyles {
     fontSize: 14,
     fontWeight: FontWeight.bold,
   );
-  static final TextStyle bold14blackElmessiri = GoogleFonts.elMessiri(
-    color: AppColors.blackColor,
-    fontSize: 14,
-    fontWeight: FontWeight.bold,
-  );
-
-  static final TextStyle bold22blackElmessiri = GoogleFonts.elMessiri(
-    color: AppColors.blackColor,
-    fontSize: 22,
-    fontWeight: FontWeight.bold,
-  );
 }

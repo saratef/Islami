@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
   List<String> bgImages = [
     AppImages.suraBg,
-    AppImages.hadethBg,
+    AppImages.hadethTabBg,
     AppImages.sebhaBg,
     AppImages.radioBg,
     AppImages.timeBg,

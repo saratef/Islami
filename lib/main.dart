@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/model/providers/most_recent_provider.dart';
 import 'package:islami_app/ui/home/home_screen.dart';
 import 'package:islami_app/ui/home/tabs/quran/details/sura_details1_screen.dart';
 import 'package:islami_app/ui/home/tabs/quran/details/sura_details_screen.dart';
 import 'package:islami_app/ui/on_boarding/on_boarding_screen.dart';
 import 'package:islami_app/utils/app_routes.dart';
-
+import 'package:provider/provider.dart';
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (BuildContext context) => MostRecentProvider(),
+      child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

@@ -19,6 +19,8 @@ class AppImages {
   static const String globalFooter = 'assets/images/global_footer.png';
   static const String hadethBg = 'assets/images/hadeth_item_bg.png';
   static const String hadethfooter = 'assets/images/hadeth_footer.png';
+  static const String sebhaHead = 'assets/images/sebhaHead.png';
+  static const String sebhaBody = 'assets/images/SebhaBody.png';
 }
 
 class AppIcons {

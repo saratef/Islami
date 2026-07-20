@@ -22,4 +22,5 @@ class AppStrings {
   static const String suraName = 'Sura Name';
   static const String mostRecent = 'Most Recently';
   static const String surasList = 'Suras List';
+  static const String sebhaTitle = 'سَبِّحِ اسْمَ رَبِّكَ الأعلى';
 }

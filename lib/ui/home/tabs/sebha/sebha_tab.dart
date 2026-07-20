@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/utils/app_assets.dart';
+import 'package:islami_app/utils/app_strings.dart';
 import 'package:islami_app/utils/app_styles.dart';
 
 class SebhaTab extends StatefulWidget {
@@ -18,17 +19,16 @@ class _SebhaTabState extends State<SebhaTab> {
     'الله اكبر',
   ];
   int counter = 0;
-  int currentTheker = 0;
+  int currentThekr = 0;
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Column(
       spacing: 20,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          'سَبِّحِ اسْمَ رَبِّكَ الأعلى',
+          AppStrings.sebhaTitle,
           style: AppStyles.bold32whiteElmessiri,
           textAlign: TextAlign.center,
         ),
@@ -41,7 +41,7 @@ class _SebhaTabState extends State<SebhaTab> {
                 Column(
                   children: [
                     Text(
-                      athkar[currentTheker],
+                      athkar[currentThekr],
                       style: AppStyles.bold32whiteElmessiri,
                     ),
                     Text('$counter', style: AppStyles.bold32whiteElmessiri),
@@ -49,22 +49,22 @@ class _SebhaTabState extends State<SebhaTab> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    ratio += .05;
+                    ratio += .04;
                     if (counter < 33) {
                       counter++;
                     } else {
                       counter = 0;
-                      if (currentTheker < athkar.length - 1) {
-                        currentTheker++;
+                      if (currentThekr < athkar.length - 1) {
+                        currentThekr++;
                       } else {
-                        currentTheker = 0;
+                        currentThekr = 0;
                       }
                     }
                     setState(() {});
                   },
                   child: AnimatedRotation(
                     turns: ratio,
-                    duration: Duration(milliseconds: 200),
+                    duration: Duration(milliseconds: 220),
                     child: Image.asset(AppImages.sebhaBody),
                   ),
                 ),

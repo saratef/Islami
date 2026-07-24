@@ -1,5 +1,5 @@
 class QuranResourses {
-  static List<String> arabicAuranSuras = [
+  static List<String> arabicQuranSuras = [
     "الفاتحة",
     "البقرة",
     "آل عمران",

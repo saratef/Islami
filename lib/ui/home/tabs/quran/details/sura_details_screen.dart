@@ -44,7 +44,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                 spacing: hieght * .02,
                 children: [
                   Text(
-                    QuranResourses.arabicAuranSuras[index],
+                    QuranResourses.arabicQuranSuras[index],
                     style: AppStyles.bold24primary,
                   ),
                   Expanded(

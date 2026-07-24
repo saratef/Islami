@@ -17,8 +17,11 @@ class AppImages {
   static const String leftCorner = 'assets/images/left_corner.png';
   static const String rightCorner = 'assets/images/right_corner.png';
   static const String globalFooter = 'assets/images/global_footer.png';
-  static const String hadethBg = 'assets/images/hadeth_bg.png';
+  static const String hadethBg = 'assets/images/hadeth_item_bg.png';
   static const String hadethfooter = 'assets/images/hadeth_footer.png';
+  static const String sebhaHead = 'assets/images/sebhaHead.png';
+  static const String sebhaBody = 'assets/images/SebhaBody.png';
+  static const String audio = 'assets/images/running.png';
 }
 
 class AppIcons {
@@ -29,4 +32,8 @@ class AppIcons {
   static const String sebhaIcon = "${_base}sebha_icon.png";
   static const String radioIcon = "${_base}radio_icon.png";
   static const String timeIcon = "${_base}time_icon.png";
+  static const String puse = "${_base}puse.png";
+  static const String play = "${_base}play.png";
+  static const String highVolume = "${_base}Volume High.png";
+  static const String muteVolume = "${_base}mute.png";
 }

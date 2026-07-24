@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami_app/model/providers/most_recent_provider.dart';
 import 'package:islami_app/model/quran_resources.dart';
 import 'package:islami_app/ui/home/tabs/quran/details/ayat_item1_widget.dart';
 import 'package:islami_app/ui/home/tabs/quran/details/ayat_item_widget.dart';
 import 'package:islami_app/utils/app_assets.dart';
 import 'package:islami_app/utils/app_colors.dart';
 import 'package:islami_app/utils/app_styles.dart';
+import 'package:provider/provider.dart';
 
 class SuraDetails1Screen extends StatefulWidget {
   @override
@@ -16,11 +18,19 @@ class _SuraDetailsScreenState extends State<SuraDetails1Screen> {
   String versesText = '';
   List<String> versesList = [];
   bool isLines = false;
+  late MostRecentProvider mostRecentProvider;
+
+  @override
+  void dispose() {
+    super.dispose();
+    mostRecentProvider.getMostRecentList();
+  }
 
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
+    mostRecentProvider = Provider.of<MostRecentProvider>(context);
 
     int index = ModalRoute.of(context)?.settings.arguments as int;
     if (isLines ? versesText.isEmpty : versesList.isEmpty) {
@@ -65,7 +75,7 @@ class _SuraDetailsScreenState extends State<SuraDetails1Screen> {
                     children: [
                       Image.asset(AppImages.leftCorner),
                       Text(
-                        QuranResourses.arabicAuranSuras[index],
+                        QuranResourses.arabicQuranSuras[index],
                         style: AppStyles.bold24primary,
                       ),
                       Image.asset(AppImages.rightCorner),

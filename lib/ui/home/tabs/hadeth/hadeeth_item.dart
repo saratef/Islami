@@ -21,7 +21,6 @@ class _HadeethItemState extends State<HadeethItem> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     loadHadeethFile();
   }
@@ -48,43 +47,41 @@ class _HadeethItemState extends State<HadeethItem> {
           ? Center(
               child: CircularProgressIndicator(color: AppColors.blackColor),
             )
-          : Expanded(
-              child: Column(
-                spacing: height * .02,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        width: width * .22,
-                        AppImages.leftCorner,
-                        color: AppColors.blackColor,
-                      ),
-                      Expanded(
-                        child: HadethTextWidget(
-                          text: hadeth?.title ?? '',
-                          textStyle: AppStyles.bold22blackElmessiri,
-                        ),
-                      ),
-                      Image.asset(
-                        width: width * .22,
-                        AppImages.rightCorner,
-                        color: AppColors.blackColor,
-                      ),
-                    ],
-                  ),
-                  Expanded(
-                    child: SingleChildScrollView(
+          : Column(
+              spacing: height * .02,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      width: width * .22,
+                      AppImages.leftCorner,
+                      color: AppColors.blackColor,
+                    ),
+                    Expanded(
                       child: HadethTextWidget(
-                        text: '${hadeth?.content ?? ''}',
-                        textStyle: AppStyles.bold14blackElmessiri,
+                        text: hadeth?.title ?? '',
+                        textStyle: AppStyles.bold22blackElmessiri,
                       ),
                     ),
+                    Image.asset(
+                      width: width * .22,
+                      AppImages.rightCorner,
+                      color: AppColors.blackColor,
+                    ),
+                  ],
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: HadethTextWidget(
+                      text: '${hadeth?.content ?? ''}',
+                      textStyle: AppStyles.bold14blackElmessiri,
+                    ),
                   ),
-                  Image.asset(AppImages.hadethfooter),
-                ],
-              ),
+                ),
+                Image.asset(AppImages.hadethfooter),
+              ],
             ),
     );
   }
@@ -96,7 +93,6 @@ class _HadeethItemState extends State<HadeethItem> {
     String title = hadeethContent.substring(0, hadeethContent.indexOf('\n'));
     String content = hadeethContent.substring(hadeethContent.indexOf('\n') + 1);
     hadeth = Hadeth(title: title, content: content);
-    print(title);
     setState(() {});
     // List<String> lines = hadeethContent.split('\n');
     // String title = lines[0];

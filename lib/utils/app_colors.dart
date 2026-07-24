@@ -5,5 +5,7 @@ class AppColors {
   static const Color brownColor = Color(0xff856B3F);
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color blackColor = Color(0xff202020);
+  static const Color transBlackColor = Color(0xB3202020);
   static const Color greyColor = Color(0xff707070);
+  static const Color transparent = Color(0x00000000);
 }

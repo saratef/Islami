@@ -44,6 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
           fit: BoxFit.fill,
         ),
         Scaffold(
+
           backgroundColor: Colors.transparent,
           body: SafeArea(
             child: Column(
